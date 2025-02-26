@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  max-width: 1190px;
+  padding: 0 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 176px;
+  min-height: 52px;
+  padding: 10px;
+  font-size: 14px;
+  text-transform: capitalize;
+  background-color: rgba(241, 173, 29, 1);
+  color: #fff;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(241, 173, 29,.7);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+
+}
+.subtitle {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.4;
+    color:#4D4943;
+}
+
+.about-us-card{
+  display: flex;
+  align-items: flex-end;
+
+  background-color: blue;
+  width: 100%;
+  min-height: 148px;
+
+  padding: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-us-card__caption{
+  width: max-content;
+  max-width: 100%;
+  min-width: 177px;
+  min-height: 42px;
+  padding: 14px 17px;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+.secret-of-company-card {
+  background-color: red;
+  width:100%;
+  min-height: 178px;
+  display:flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 14px 12px;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+
+.secret-of-company-card__caption{
+  background-color: #333333;
+  padding: 15px 17px;
+  width: 100%;
+  display: block;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.highlighted-text{
+  color: #F1AD1D;
+}
+.orange-line{
+  position: relative;
+  padding-bottom: 48px;
+}
+.orange-line:after{
+  content:"";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #F1AD1D;
+  position: absolute;
+  left: 50%;
+  transform:translateX(-50%);
+  bottom: 0;
+}
+
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+/* FORM */
+
+input, textarea {
+  font-size: 14px;
+  font-weight: 300;
+  border: 1px solid #929292;
+  color: #505050;
+  padding-left: 14px;
+}
+
+input {
+  min-height: 46px;
+}
+
+textarea {
+  height: 187px;
+  line-height: 1.5;
+  padding: 14px;
+  resize: none;
+}
+
+input::placeholder, textarea::placeholder {
+  font-weight: 300;
+  font-style: italic;
+}
