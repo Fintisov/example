@@ -20,8 +20,14 @@
     "gulp-csso": "^4.0.1",
     "gulp-imagemin": "^8.0.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.69.4"
+    "sass": "^1.69.4",
+    "gulp-gh-pages": "^0.5.4"
+
   },
-  "browserslist": ["last 3 version"],
-  "type": "module"
+  "browserslist": [
+    "last 3 version"
+  ],
+  "type": "module",
+  "dependencies": {
+  }
 }

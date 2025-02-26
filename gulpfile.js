@@ -1,6 +1,9 @@
 import gulp from "gulp";
 const { src, dest, watch, series, parallel } = gulp;
 
+
+import ghPages from 'gulp-gh-pages'
+
 import imagemin from "gulp-imagemin";
 import autoprefixer from "gulp-autoprefixer";
 import csso from "gulp-csso";
@@ -61,6 +64,11 @@ const browserSyncTaskHandler = () => {
 		series(imagesTaskHandler, browserSync.reload)
 	);
 };
+
+gulp.task('deploy', function() {
+	return gulp.src('./dist/**/*')
+		.pipe(ghPages());
+});
 
 export const cleaning = cleanDistTaskHandler;
 export const html = htmlTaskHandler;
